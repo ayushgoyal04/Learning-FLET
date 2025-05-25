@@ -16,6 +16,13 @@ def main(page: ft.Page):
             ft.dropdown.Option("Cyber"),
         ]),
         ft.Slider(min=0, max=10, divisions=10),
+        ft.Container(
+            content=ft.Icon(ft.Icons.HOME),
+            bgcolor="black",
+            margin=20,
+            padding=5,
+            border_radius=10,
+        ),
     )
 
 
