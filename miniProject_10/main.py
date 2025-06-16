@@ -5,7 +5,6 @@ def main(page: ft.Page):
     rows, cols = 30, 30
     cell_size = 15
     selected_color = ft.Colors.BLACK
-
     grid = []
 
     def paint_cell(e):
@@ -25,24 +24,20 @@ def main(page: ft.Page):
             row.append(cell)
         grid.append(row)
 
-    grid_ui = ft.Column(
-        [
+    grid_ui = ft.Column([
         ft.Row(row, spacing=0) for row in grid
-        ], spacing=0
-    )
+    ], spacing=0)
 
     def clear_canvas(e):
         for row in grid:
             for cell in row:
                 cell.bgcolor = ft.Colors.WHITE
                 cell.update()
-
         page.update()
 
     page.add(
         grid_ui,
         ft.ElevatedButton("Clear Canvas", on_click=clear_canvas),
     )
-
 
 ft.app(target=main)
