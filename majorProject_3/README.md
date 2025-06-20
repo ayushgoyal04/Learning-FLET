@@ -1,4 +1,18 @@
-# Majorproject3 app
+# Major Project 3: Flet Application Template
+
+## Project Overview
+
+This project serves as a template for creating a distributable Flet application. It includes the necessary file structure (`pyproject.toml`, `src` directory) and a comprehensive guide for running, building, and packaging your Flet app for multiple platforms including Android, iOS, and desktop (Windows, macOS, Linux).
+
+### Example Application: Counter
+
+The initial application provided in this template is a simple counter. It demonstrates basic Flet concepts:
+
+- **State Management:** A number is stored as state and incremented.
+- **Controls:** It uses `ft.Text` to display the count and a `ft.FloatingActionButton` to increment it.
+- **Layout:** The counter is centered on the page using `ft.SafeArea` and `ft.Container`.
+
+This simple example can be replaced with your own application logic in `src/main.py`.
 
 ## Run the app
 
